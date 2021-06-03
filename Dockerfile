@@ -1,6 +1,6 @@
-FROM --platform=$BUILDPLATFORM containrrr/watchtower:latest as parent
+FROM containrrr/watchtower:latest as parent
 
-FROM --platform=$BUILDPLATFORM alpine:3.11 as alpine
+FROM alpine:3.11 as alpine
 
 RUN apk add --no-cache \
     ca-certificates \
